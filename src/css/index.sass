@@ -17,20 +17,49 @@ body
   background-size: contain
   background-position: center
   background-repeat: no-repeat
+  @media screen and ( max-width: 991px )
+    width: 750px
+    height: 982px
+    padding: 30px 50px
+  @media screen and ( max-width: 767px )
+    width: 550px
+    height: 720px
+    padding: 20px 30px
+  @media screen and ( max-width: 575px )
+    background-size: cover
+
 .logo
   margin-bottom: 30px
+  @media screen and ( max-width: 767px )
+    height: 50px
+    margin-bottom: 20px
+    img
+      height: 100%
 .title
   display: inline-block
 
   margin: 0px auto 60px
+  @media screen and ( max-width: 991px )
+    margin-bottom: 40px
+  @media screen and ( max-width: 767px )
+    height: 50px
+    margin-bottom: 20px
+    img
+      height: 100%
 .bio
   margin-bottom: 60px
+  @media screen and ( max-width: 991px )
+    margin-bottom: 30px
+  @media screen and ( max-width: 767px )
+    margin-bottom: 20px
   .bio-block
     display: flex
     align-items: flex-end
     justify-content: flex-start
 
     margin-bottom: 25px
+    @media screen and ( max-width: 767px )
+      margin-bottom: 10px
 
 .block-title
   color: #2f1b15
@@ -38,6 +67,10 @@ body
   font-weight: 700
 
   margin-right: 15px
+  @media screen and ( max-width: 991px )
+    font-size: 18px
+  @media screen and ( max-width: 767px )
+    font-size: 16px
 .block-value
   font-family: 'Courier New'
   font-size: 30px
@@ -50,11 +83,20 @@ body
   background-size: 100% 6px
 
   flex: 1
-
+  @media screen and ( max-width: 991px )
+    font-size: 24px
+  @media screen and ( max-width: 767px )
+      font-size: 18px
 .skills-block
   margin-bottom: 40px
+  @media screen and ( max-width: 991px )
+    margin-bottom: 20px
+  // @media screen and ( max-width: 767px )
+    // margin-bottom: 10px
   .block-title
     margin-bottom: 20px
+    @media screen and ( max-width: 767px )
+      margin-bottom: 10px
   .skills-list
     display: flex
     flex-flow: column wrap
@@ -62,12 +104,20 @@ body
 
     font-size: 21px
     font-weight: 700
+    @media screen and ( max-width: 767px )
+      max-height: 90px
+
+      font-size: 16px
+    @media screen and ( max-width: 575px )
+      max-height: 140px
 
   .skill-item
     display: flex
     align-items: center
 
     margin-bottom: 16px
+    @media screen and ( max-width: 767px )
+      margin-bottom: 6px
     input[type=checkbox]
       display: none
     label
@@ -102,8 +152,14 @@ body
     
 .js-mastery-block
   margin-bottom: 40px
+  @media screen and ( max-width: 575px )
+    margin-bottom: 20px
   .block-title
     margin-bottom: 25px
+    @media screen and ( max-width: 991px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 767px )
+      margin-bottom: 10px
   .slider-block
     position: relative
     display: flex
@@ -136,6 +192,8 @@ body
 
     object-fit: cover
     object-position: center bottom
+    @media screen and ( max-width: 767px )
+      height: auto
   .slider-skill-levels
     justify-content: space-between
     .level-item
@@ -148,6 +206,8 @@ body
       cursor: pointer
 
       user-select: none
+      @media screen and ( max-width: 767px )
+        font-size: 12px
       &:first-child
         left: 4px
       &:nth-child(2)

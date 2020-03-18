@@ -124,27 +124,70 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
+  @media screen and (max-width: 991px) {
+    .folder-block {
+      width: 750px;
+      height: 982px;
+      padding: 30px 50px; } }
+  @media screen and (max-width: 767px) {
+    .folder-block {
+      width: 550px;
+      height: 720px;
+      padding: 20px 30px; } }
+  @media screen and (max-width: 575px) {
+    .folder-block {
+      background-size: cover; } }
 
 .logo {
   margin-bottom: 30px; }
+  @media screen and (max-width: 767px) {
+    .logo {
+      height: 50px;
+      margin-bottom: 20px; }
+      .logo img {
+        height: 100%; } }
 
 .title {
   display: inline-block;
   margin: 0px auto 60px; }
+  @media screen and (max-width: 991px) {
+    .title {
+      margin-bottom: 40px; } }
+  @media screen and (max-width: 767px) {
+    .title {
+      height: 50px;
+      margin-bottom: 20px; }
+      .title img {
+        height: 100%; } }
 
 .bio {
   margin-bottom: 60px; }
+  @media screen and (max-width: 991px) {
+    .bio {
+      margin-bottom: 30px; } }
+  @media screen and (max-width: 767px) {
+    .bio {
+      margin-bottom: 20px; } }
   .bio .bio-block {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     margin-bottom: 25px; }
+    @media screen and (max-width: 767px) {
+      .bio .bio-block {
+        margin-bottom: 10px; } }
 
 .block-title {
   color: #2f1b15;
   font-size: 22px;
   font-weight: 700;
   margin-right: 15px; }
+  @media screen and (max-width: 991px) {
+    .block-title {
+      font-size: 18px; } }
+  @media screen and (max-width: 767px) {
+    .block-title {
+      font-size: 16px; } }
 
 .block-value {
   font-family: 'Courier New';
@@ -155,21 +198,43 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 6px;
   flex: 1; }
+  @media screen and (max-width: 991px) {
+    .block-value {
+      font-size: 24px; } }
+  @media screen and (max-width: 767px) {
+    .block-value {
+      font-size: 18px; } }
 
 .skills-block {
   margin-bottom: 40px; }
+  @media screen and (max-width: 991px) {
+    .skills-block {
+      margin-bottom: 20px; } }
   .skills-block .block-title {
     margin-bottom: 20px; }
+    @media screen and (max-width: 767px) {
+      .skills-block .block-title {
+        margin-bottom: 10px; } }
   .skills-block .skills-list {
     display: flex;
     flex-flow: column wrap;
     max-height: 150px;
     font-size: 21px;
     font-weight: 700; }
+    @media screen and (max-width: 767px) {
+      .skills-block .skills-list {
+        max-height: 90px;
+        font-size: 16px; } }
+    @media screen and (max-width: 575px) {
+      .skills-block .skills-list {
+        max-height: 140px; } }
   .skills-block .skill-item {
     display: flex;
     align-items: center;
     margin-bottom: 16px; }
+    @media screen and (max-width: 767px) {
+      .skills-block .skill-item {
+        margin-bottom: 6px; } }
     .skills-block .skill-item input[type=checkbox] {
       display: none; }
     .skills-block .skill-item label {
@@ -200,8 +265,17 @@ body {
 
 .js-mastery-block {
   margin-bottom: 40px; }
+  @media screen and (max-width: 575px) {
+    .js-mastery-block {
+      margin-bottom: 20px; } }
   .js-mastery-block .block-title {
     margin-bottom: 25px; }
+    @media screen and (max-width: 991px) {
+      .js-mastery-block .block-title {
+        margin-bottom: 15px; } }
+    @media screen and (max-width: 767px) {
+      .js-mastery-block .block-title {
+        margin-bottom: 10px; } }
   .js-mastery-block .slider-block {
     position: relative;
     display: flex;
@@ -230,6 +304,9 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center bottom; }
+    @media screen and (max-width: 767px) {
+      .js-mastery-block .slider-line {
+        height: auto; } }
   .js-mastery-block .slider-skill-levels {
     justify-content: space-between; }
     .js-mastery-block .slider-skill-levels .level-item {
@@ -239,6 +316,9 @@ body {
       font-weight: 700;
       cursor: pointer;
       user-select: none; }
+      @media screen and (max-width: 767px) {
+        .js-mastery-block .slider-skill-levels .level-item {
+          font-size: 12px; } }
       .js-mastery-block .slider-skill-levels .level-item:first-child {
         left: 4px; }
       .js-mastery-block .slider-skill-levels .level-item:nth-child(2) {
