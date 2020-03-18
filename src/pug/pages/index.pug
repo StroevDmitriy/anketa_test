@@ -1,0 +1,85 @@
+html(lang="en")
+	include ../includes/head.pug
+		title Главная
+	body
+		section.main
+			.folder-block
+				.logo
+					img(src="img/io.png", alt="")
+				.title
+					img(src="img/title.png", alt="")
+				.bio
+					.bio-block.name-block
+						.block-title Полное ФИО
+						.block-value Строев Дмитрий Андреевич
+					.bio-block.birth-year-block
+						.block-title Год рождения
+						.block-value 1993
+					.bio-block.residence-block
+						.block-title Место жительства
+						.block-value г.Санкт-Петербург
+					.bio-block.skype-login-block
+						.block-title Скайп
+						.block-value sin_initiative
+					.bio-block.email-block
+						.block-title Почта
+						.block-value stroev.core@gmail.com
+				
+				.skills
+					.skills-block.chekboxes-block
+						.block-title Расскажите о себе чекбоксами
+
+						.skills-list
+							.skill-item
+								input(type="checkbox" id="skill-html" checked)
+								label(for="skill-html") HTML
+							.skill-item
+								input(type="checkbox" id="skill-css" checked)
+								label(for="skill-css") CSS
+							.skill-item
+								input(type="checkbox" id="skill-scss" checked)
+								label(for="skill-scss") SCSS (SASS)
+							.skill-item
+								input(type="checkbox" id="skill-bem" checked)
+								label(for="skill-bem") БЭМ
+							.skill-item
+								input(type="checkbox" id="skill-jquery" checked)
+								label(for="skill-jquery") JQuery
+							.skill-item
+								input(type="checkbox" id="skill-vue" checked)
+								label(for="skill-vue") Vue.js
+							.skill-item
+								input(type="checkbox" id="skill-nuxt")
+								label(for="skill-nuxt") Nuxt.js
+							.skill-item
+								input(type="checkbox" id="skill-git" checked)
+								label(for="skill-git") Git
+							.skill-item
+								input(type="checkbox" id="skill-adaptive" checked)
+								label(for="skill-adaptive") Адаптивная верстка
+							.skill-item
+								input(type="checkbox" id="skill-email")
+								label(for="skill-email") Верстка писем
+							.skill-item
+								input(type="checkbox" id="skill-php")
+								label(for="skill-php") PHP
+							.skill-item
+								input(type="checkbox" id="skill-mysql")
+								label(for="skill-mysql") MySql
+
+					.js-mastery-block
+						.block-title Уровень владения JavaScript
+						.slider-block
+							#slider-arrow.level-3
+							img.slider-line(src="img/slider-line.png", alt="")
+							.slider-skill-levels.d-flex
+								.level-item(data-level="1") Не владею
+								.level-item(data-level="2") Использую готовые решения
+								.level-item(data-level="3") Использую готовые решения и умею их переделывать
+								.level-item(data-level="4") Пишу сложный JS с нуля
+
+				.filling-date-block
+					.block-title Дата заполнения
+					.block-value 18.03.2020
+
+		script(src="js/main.js")
