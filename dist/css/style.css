@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Courier New';
-  src: url("../fonts/CourierNew.ttf");
+  font-family: "Courier";
+  src: url("../fonts/CourierNew.woff2") format("woff2"), url("../fonts/CourierNew.woff") format("woff");
   font-style: normal; }
 
 html, body,
@@ -147,17 +147,19 @@ body {
       .logo img {
         height: 100%; } }
 
-.title {
-  display: inline-block;
+.main-title {
+  display: flex;
   margin: 0px auto 60px; }
+  .main-title img {
+    margin: auto; }
   @media screen and (max-width: 991px) {
-    .title {
+    .main-title {
       margin-bottom: 40px; } }
   @media screen and (max-width: 767px) {
-    .title {
+    .main-title {
       height: 50px;
       margin-bottom: 20px; }
-      .title img {
+      .main-title img {
         height: 100%; } }
 
 .bio {
@@ -190,7 +192,7 @@ body {
       font-size: 16px; } }
 
 .block-value {
-  font-family: 'Courier New';
+  font-family: 'Courier';
   font-size: 30px;
   padding: 0px 0px 6px 12px;
   background-image: url(../img/line.png);
@@ -217,7 +219,8 @@ body {
         margin-bottom: 10px; } }
   .skills-block .skills-list {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     max-height: 150px;
     font-size: 21px;
     font-weight: 700; }

@@ -35,10 +35,12 @@ body
     margin-bottom: 20px
     img
       height: 100%
-.title
-  display: inline-block
+.main-title
+  display: flex
 
   margin: 0px auto 60px
+  img
+    margin: auto
   @media screen and ( max-width: 991px )
     margin-bottom: 40px
   @media screen and ( max-width: 767px )
@@ -72,7 +74,7 @@ body
   @media screen and ( max-width: 767px )
     font-size: 16px
 .block-value
-  font-family: 'Courier New'
+  font-family: 'Courier'
   font-size: 30px
 
   padding: 0px 0px 6px 12px 
@@ -97,7 +99,9 @@ body
       margin-bottom: 10px
   .skills-list
     display: flex
-    flex-flow: column wrap
+    // flex-flow: column wrap
+    flex-direction: column
+    flex-wrap: wrap
     max-height: 150px
 
     font-size: 21px
